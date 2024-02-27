@@ -38,6 +38,10 @@ public class Card {
     @ManyToOne
     private Account account;
 
+    public Card(Account account) {
+        this.account = account;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
