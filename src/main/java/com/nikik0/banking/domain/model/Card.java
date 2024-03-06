@@ -2,6 +2,7 @@ package com.nikik0.banking.domain.model;
 
 import jakarta.persistence.*;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.hibernate.annotations.JdbcTypeCode;
 import org.hibernate.type.SqlTypes;
@@ -15,6 +16,7 @@ import java.util.UUID;
 @Setter
 @Entity
 @Table(name = "cards")
+@NoArgsConstructor
 public class Card {
 
     @Id
